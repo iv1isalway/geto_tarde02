@@ -1,0 +1,514 @@
+/*importando a tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@600&family=Roboto:wght@300&display=swap');
+
+
+/* reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    resize: none;
+}
+
+/*variaveis CSS*/
+:root {
+    --font_bebas: 'Mitr', sans-serif;
+    --font_mont: 'Roboto', sans-serif;
+    --verde: #7ea67c;
+    --branco_pastel: #f5ffeb;
+    --marrom: #3f2a26;
+}
+
+.alinhamento {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/*cabeçalho*/
+header {
+    background-color: var(--verde);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.logo {
+    width: 150px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    list-style: none;
+
+}
+
+.menu a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--font_mont);
+    font-weight: 800;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid var(--branco_pastel);
+    color: var(--branco_pastel);
+}
+
+/* quem somos */
+main {
+    background-color: var(--branco_pastel);
+
+}
+
+h1 {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+}
+
+.quem_somos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.primeira_foto {
+    width: 700px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 70px;
+}
+
+.sobre {
+    text-align: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre_titulo {
+    font-family: var(--font_bebas);
+    font-size: 60px;
+    color: var(--marrom);
+}
+
+
+.sobre_texto {
+    font-family: var(--font_mont);
+    font-size: 25px;
+    color: var(--marrom);
+}
+
+.btn_esg {
+    background-color: var(--verde);
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn_esg a {
+    color: var(--marrom);
+    text-decoration: none;
+}
+
+/* data de lançamento */
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font_bebas);
+    font-size: 80px;
+    color: var(--branco_pastel);
+    background-color: var(--verde);
+    padding: 100px;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+/* imagens */
+.imagens {
+    background-color: var(--verde);
+    padding-bottom: 100px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imgs>* {
+    width: 475px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ESG */
+.esg {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.sobre_esg {
+    text-align: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre_esg_titulo {
+    font-family: var(--font_bebas);
+    font-size: 60px;
+    color: var(--marrom);
+}
+
+.sobre_esg_texto {
+    font-family: var(--font_mont);
+    font-size: 30px;
+    color: var(--marrom);
+}
+
+.esg img {
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 70px;
+}
+
+/* formulário */
+.formulario {
+    background-color: var(--verde);
+    padding: 100px 0;
+}
+
+.formulario_titulo {
+    font-family: var(--font_bebas);
+    font-size: 60px;
+    color: var(--branco_pastel);
+    text-align: center;
+    margin: 15px;
+}
+
+form {
+    color: white;
+    font-family: var(--font_mont);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    height: 35px;
+    padding: 20px;
+}
+
+textarea {
+    padding: 20px;
+}
+
+.borda {
+    border: 1px solid var(--branco_pastel);
+    border-radius: 15px;
+}
+
+.btn_forms {
+    background: white;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    color: var(--verde);
+    margin: 0 auto;
+}
+
+/* contato */
+.mapa {
+    width: 580px;
+}
+
+.contato {
+    padding: 100px 0;
+    /* margin-bottom: 15px; */
+}
+
+.contato_titulo {
+    font-family: var(--font_bebas);
+    font-size: 60px;
+    text-align: center;
+    color: var(--marrom);
+}
+
+.conteudo_contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.borda_mapa {
+    border: 5px solid var(--verde);
+    width: 700px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato_info {
+    font-family: var(--font_mont);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info>i {
+    margin-right: 20px;
+    color: var(--verde);
+}
+
+/* footer */
+footer {
+    background-color: var(--verde);
+    color: white;
+    font-family: var(--font_mont);
+    font-size: 19px;
+    height: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* responsividade */
+/* pequenas telas: até 600px
+celular: 600px até 768px
+tablet: 798px até 768px
+desktop: 992px até 1200
+grandes telas: acima de 1200px */
+
+@media screen and (max-width: 1440px) {
+
+    .alinhamento {
+        width: 100%;
+    }
+
+    nav {
+        padding: 0 50px;
+    }
+
+    .sobre {
+        max-width: 500px;
+    }
+
+    .quem_somos {
+        padding: 100px 50px;
+    }
+
+    .imgs {
+        flex-wrap: wrap;
+    }
+}
+
+.esg img {
+    width: 50%;
+    padding: 100px 50px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .primeira_foto {
+        width: 550px;
+    }
+
+    .data {
+        display: flex;
+        text-align: center;
+    }
+
+    .esg{
+        padding: 100px 55px;
+        gap: 30px;
+    }
+
+    .esg img {
+        width: 45%;
+        padding: 0;
+    }
+
+    .sobre_esg {
+        width: 480px;
+    }
+
+    .sobre_esg_texto {
+        font-size: 22px;
+    }
+
+    .imagens {
+        display: flex;
+    }
+
+    .alinhamento {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .logo img{
+        width: 150px;
+    }
+    .quem_somos {
+        flex-direction: column;
+    }
+
+    .sobre {
+        margin-top: 30px;
+    }
+
+    .imgs {
+        gap: 50px;
+    }
+
+    .data {
+        font-size: 85px;
+    }
+
+    .esg {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .sobre_esg {
+        width: 520px;
+    }
+
+    .conteudo_contato {
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    #burguer {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #burguer {
+        display: block;
+        color: var(--marrom);
+        font-size: 55px;
+    }
+
+    .borda_mapa {
+        width: 95%;
+    }
+
+    #itens {
+        position: absolute;
+        height: 92vh;
+        width: 50vw;
+        top: 8vh;
+        right: 0;
+        background-color: var(--verde);
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .menu li {
+        padding: 50px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .data {
+        font-size: 70px;
+        
+        display: flex;
+        text-align: center
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .primeira_foto {
+        width: 450px;
+    }
+
+    .data {
+        font-size: 45px;
+
+        display: flex;
+        text-align: center;
+    }
+
+
+    .esg img {
+        width: 70%;
+    }
+
+    .sobre_esg_texto {
+        padding: 0 90px;
+    }
+
+    .mapa {
+        width: 400;
+    }
+
+    .borda_mapa {
+        width: 480;
+    }
+
+    .conteudo_contato {
+        align-items: center;
+        justify-content: center;
+    }
+}
